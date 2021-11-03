@@ -10,6 +10,9 @@ versions:
 shortTitle: Quickstart
 ---
 
+distributionManagement
+
+
 {% data reusables.actions.enterprise-github-hosted-runners %}
 {% data reusables.actions.ae-beta %}
 
@@ -23,7 +26,7 @@ In this guide, you'll create a {% data variables.product.prodname_actions %} wor
 2. Clone the repository to your local machine.
     ```shell
     $ git clone https://{% ifversion ghae %}<em>YOUR-HOSTNAME</em>{% else %}github.com{% endif %}/<em>YOUR-USERNAME</em>/<em>YOUR-REPOSITORY</em>.git
-    $ cd <em>YOUR-REPOSITORY</em>
+    $ cd <em>YOUR-REPOSITORY</em> quickstart.md
     ```
 3. Create an `index.js` file and add a basic alert to say "Hello world!"
     {% raw %}
